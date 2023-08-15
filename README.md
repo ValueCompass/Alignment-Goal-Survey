@@ -1,7 +1,7 @@
-# Alignment Target Survey
-A collection of papers and resources related to alignment targets for big models.
+# A Survey about Alignment Goals
+A collection of papers and resources related to alignment goals for big models.
 
-The organization of papers refers to our survey "Value Compass: From Instructions to Intrinsic Human Values —— A Survey of Alignment Target for Big Model".
+The organization of papers refers to our survey "Value Compass: From Instructions to Intrinsic Human Values —— A Survey of Alignment Goal for Big Model".
 
 ![](paper_tree.png)
 
@@ -42,13 +42,13 @@ The organization of papers refers to our survey "Value Compass: From Instruction
 4. **Webgpt: Browser-assisted question-answering with human feedback**. *Nakano et al.* arXiv 2021. [[Paper](https://arxiv.org/pdf/2112.09332.pdf)][[Data](https://huggingface.co/datasets/openai/webgpt_comparisons)]
 5. **OpenAssistant Conversations--Democratizing Large Language Model Alignment**. *Kopf et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2304.07327.pdf)][[Project](https://github.com/LAION-AI/Open-Assistant)][[Data](https://huggingface.co/datasets/OpenAssistant/oasst1)][[Checkpoint](https://huggingface.co/OpenAssistant)]
 6. **Human Preference Score v2: A Solid Benchmark for Evaluating Human Preferences of Text-to-Image Synthesis**. *Wu et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2306.09341.pdf)][[Project](https://github.com/tgxs002/HPSv2)][[Data](https://huggingface.co/datasets/zhwang/HPDv2)]
-7. **Visual Instruction Tuning with Polite Flamingo**. *Chen et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2307.01003.pdf)][[Project](https://github.com/ChenDelong1999/polite_flamingo)][[Data](https://huggingface.co/datasets/chendelong/PF-1M/tree/main)]
 
 #### Model Synthetic Feedback 
 1. **Reward design with language models**. *Kwon et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2303.00001.pdf)]
 2. **Aligning Large Language Models through Synthetic Feedback**. *Kim et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2305.13735.pdf)]
 3. **Training Socially Aligned Language Models in Simulated Human Society**. *Liu et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2305.16960.pdf)][[Project](https://github.com/agi-templar/Stable-Alignment)]
 4. **Training Language Models with Language Feedback at Scale**. *Jeremy Scheurer et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2303.16755.pdf)][[Data](https://huggingface.co/datasets/JeremyAlain/SLF5K)][[Project](https://github.com/JeremyAlain/imitation_learning_from_language_feedback)]
+5. **Visual Instruction Tuning with Polite Flamingo**. *Chen et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2307.01003.pdf)][[Project](https://github.com/ChenDelong1999/polite_flamingo)][[Data](https://huggingface.co/datasets/chendelong/PF-1M/tree/main)]
 
 ### Human Values
 #### Value Principles
