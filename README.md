@@ -1,13 +1,57 @@
 # A Survey about Alignment Goals
-A collection of papers and resources related to alignment goals for big models.
+A collection of papers and resources related to alignment for big models.
 
-The organization of papers refers to our survey "Value Compass: From Instructions to Intrinsic Human Values —— A Survey of Alignment Goal for Big Model".
+The organization of papers refers to our survey "From Instructions to Intrinsic Human Values —— A Survey of Alignment Goals for Big Models".
 
 ![](paper_tree.png)
 
-## Definition of Alignment Targets
-### Human Instructions
+## Table of Contents
+<details>
+<ol>
+<li>
+    <a href="#definition-of-alignment-goals">Definition of Alignment Goals</a>
+    <ul>
+    <li><a href="#human-instructions">Human Instructions</a></li>
+    <li><a href="#human-preferences">Human Preferences</a></li>
+        <ul>
+        <li><a href="#human-demonstrations">Human Demonstrations</a></li>
+        <li><a href="#human-feedback">Human Feedback</a></li>
+        <li><a href="#model-synthetic-feedback">Model Synthetic Feedback</a></li>
+        </ul>
+    <li><a href="#human-values">Human Values</a></li>
+        <ul>
+        <li><a href="#value-principles">Value Principles</a></li>
+        <li><a href="#target-representation">Target Representation</a></li>
+        </ul>
+    </ul>
+</li>
+<li>
+    <a href="#evaluation-of-alignment">Evaluation of Alignment</a>
+    <ul>
+    <li><a href="#human-instructions-1">Human Instructions</a></li>
+        <ul>
+        <li><a href="#benchmarks">Benchmarks</a></li>
+        <li><a href="#automatic-chatbot-arenas">Automatic Chatbot Arenas</a></li>
+        </ul>
+    <li><a href="#human-preferences-1">Human Preferences</a></li>
+        <ul>
+        <li><a href="#benchmarks-1">Benchmarks</a></li>
+        <li><a href="#human-evaluation">Human Evaluation</a></li>
+        <li><a href="#reward-model">Reward Model</a></li>
+        </ul>
+    <li><a href="#human-values-1">Human Values</a></li>
+        <ul>
+        <li><a href="#benchmarks-2">Benchmarks</a></li>
+        <li><a href="#reward-model-1">Reward Model</a></li>
+        </ul>
+    </ul>
+<li><a href="#citation">Citation</a></li>
+</ol>
+</details>
 
+
+## Definition of Alignment Goals
+### Human Instructions
 1. **Multitask prompted training enables zero-shot task generalizatio**. *Sanh et al.* arXiv 2021. [[Paper](https://arxiv.org/pdf/2110.08207.pdf)][[Checkpoint](https://github.com/bigscience-workshop/t-zero)][[Data](https://github.com/bigscience-workshop/promptsource)]
 2. **Cross-task generalization via natural language crowdsourcing instructions**. *Mishra et al.* arXiv 2021. [[Paper](https://arxiv.org/pdf/2104.08773.pdf)][[Data](https://instructions.apps.allenai.org/)][[Project](https://github.com/allenai/natural-instructions-v1)]
 3. **Super-naturalinstructions: Generalization via declarative instructions on 1600+ nlp tasks**. *Wang et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2204.07705.pdf)][[Data](https://instructions.apps.allenai.org/)][[Project](https://github.com/allenai/natural-instructions)]
@@ -143,18 +187,30 @@ The organization of papers refers to our survey "Value Compass: From Instruction
 
 ### Human Values
 #### Benchmarks
+##### Safety and Risk
 1. **Training a helpful and harmless assistant with reinforcement learning from human feedback**. *Bai et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2204.05862.pdf)][[Data](https://github.com/anthropics/hh-rlhf)]
 2. **Safety Assessment of Chinese Large Language Models**. *Sun et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2304.10436.pdf)][[Data](https://github.com/thu-coai/Safety-Prompts)][[Leaderboard](http://115.182.62.166:18000/)]
 3. **SafeText: A benchmark for exploring physical safety in language models**. *Levy et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2210.10045.pdf)][[Data](https://github.com/sharonlevy/SafeText)]
 4. **CValues: Measuring the Values of Chinese Large Language Models from Safety to Responsibility**. *Xu et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2307.09705.pdf)][[Project](https://github.com/X-PLUG/CValues)][[Data](https://github.com/X-PLUG/CValues)]
-5. **The moral integrity corpus: A benchmark for ethical dialogue systems**. *Ziems et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2204.03021.pdf)][[Data](https://github.com/SALT-NLP/mic)]
-6. **Social chemistry 101: Learning to reason about social and moral norms**. *Forbes et al.* arXiv 2020. [[Paper](https://arxiv.org/pdf/2011.00620.pdf)][[Data](https://maxwellforbes.com/social-chemistry/)]
-7. **Moral stories: Situated reasoning about norms, intents, actions, and their consequences**. *Emelin et al.* arXiv 2020. [[Paper](https://arxiv.org/pdf/2012.15738.pdf)][[Data](https://github.com/demelin/moral_stories)]
-8. **Aligning ai with shared human values**. *Hendrycks et al.* arXiv 2020. [[Paper](https://arxiv.org/pdf/2008.02275.pdf)][[Data](https://github.com/hendrycks/ethics)]
-9. **Scruples: A corpus of community ethical judgments on 32,000 real-life anecdotes**. *Lourie et al.* AAAI 2021. [[Paper](https://ojs.aaai.org/index.php/AAAI/article/view/17589/17396)][[Data](https://github.com/allenai/scruples)]
-10. **Moral mimicry: Large language models produce moral rationalizations tailored to political identity**. *Simmons et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2209.12106.pdf)]
-11. **When to make exceptions: Exploring language models as accounts of human moral judgment**. *Jin et al.* Neurips 2022. [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/b654d6150630a5ba5df7a55621390daf-Paper-Conference.pdf)][[Project](https://github.com/feradauto/MoralCoT)][[Data](https://huggingface.co/datasets/feradauto/MoralExceptQA)]
-12. **Towards Answering Open-ended Ethical Quandary Questions**. *Bang et al.* arXiv 2022. [[Paper](https://amulyayadav.github.io/AI4SG2023/images/22.pdf)]
+
+##### Social Norms
+1. **The moral integrity corpus: A benchmark for ethical dialogue systems**. *Ziems et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2204.03021.pdf)][[Data](https://github.com/SALT-NLP/mic)]
+2. **Social chemistry 101: Learning to reason about social and moral norms**. *Forbes et al.* arXiv 2020. [[Paper](https://arxiv.org/pdf/2011.00620.pdf)][[Data](https://maxwellforbes.com/social-chemistry/)]
+3. **Moral stories: Situated reasoning about norms, intents, actions, and their consequences**. *Emelin et al.* arXiv 2020. [[Paper](https://arxiv.org/pdf/2012.15738.pdf)][[Data](https://github.com/demelin/moral_stories)]
+4. **Aligning ai with shared human values**. *Hendrycks et al.* arXiv 2020. [[Paper](https://arxiv.org/pdf/2008.02275.pdf)][[Data](https://github.com/hendrycks/ethics)]
+5. **Scruples: A corpus of community ethical judgments on 32,000 real-life anecdotes**. *Lourie et al.* AAAI 2021. [[Paper](https://ojs.aaai.org/index.php/AAAI/article/view/17589/17396)][[Data](https://github.com/allenai/scruples)]
+6. **Moral mimicry: Large language models produce moral rationalizations tailored to political identity**. *Simmons et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2209.12106.pdf)]
+7. **When to make exceptions: Exploring language models as accounts of human moral judgment**. *Jin et al.* Neurips 2022. [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/b654d6150630a5ba5df7a55621390daf-Paper-Conference.pdf)][[Project](https://github.com/feradauto/MoralCoT)][[Data](https://huggingface.co/datasets/feradauto/MoralExceptQA)]
+8. **Towards Answering Open-ended Ethical Quandary Questions**. *Bang et al.* arXiv 2022. [[Paper](https://amulyayadav.github.io/AI4SG2023/images/22.pdf)]
+
+##### Value Surveys
+1. **Towards Measuring the Representation of Subjective Global Opinions in Language Models**. *Durmus et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2306.16388.pdf)][[Data](https://huggingface.co/datasets/Anthropic/llm_global_opinions)]
+2. **Culture's consequences: International differences in work-related values**. *Hofstede et al.* 1984. [[Paper](https://books.google.com/books/about/Culture_s_Consequences.html?id=Cayp_Um4O9gC)]
+3. **World Values Survey Wave 7 (2017-2022)**. [[URL](https://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp)]
+4. **European Values Study**. [[URL](https://europeanvaluesstudy.eu/)]
+5. **Pew Researcj Center's Global Attitudes Surveys (GAS)** [[URL](https://www.pewresearch.org/)]
+6. **An overview of the Schwartz theory of basic values**. *Schwartz et al.* Online readings in Psychology and Culture 2012. [[Paper](https://scholarworks.gvsu.edu/cgi/viewcontent.cgi?article=1116&context=orpc)]
+7. **Probing pre-trained language models for cross-cultural differences in values**. *Arora et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2203.13722.pdf)]
 
 #### Reward Model
 1. **Learning norms from stories: A prior for value aligned agents**. *Nahian et al.* AIES 2020. [[Paper](https://arxiv.org/pdf/1912.03553.pdf)]
@@ -163,12 +219,3 @@ The organization of papers refers to our survey "Value Compass: From Instruction
 4. **Valuenet: A new dataset for human value driven dialogue system**. *Qiu et al.* AAAI 2022. [[Paper](https://ojs.aaai.org/index.php/AAAI/article/download/21368/21117)][[Project](https://liang-qiu.github.io/ValueNet/)]
 5. **Moral foundations twitter corpus: A collection of 35k tweets annotated for moral sentiment**. *Hoover et al.* Social Psychological and Personality Science 2020. [[Paper](https://journals.sagepub.com/doi/epub/10.1177/1948550619876629)]
 6. **Large pre-trained language models contain human-like biases of what is right and wrong to do**. *Schramowski et al.* Nature Machine Intelligence 2022. [[Paper](https://arxiv.org/pdf/2103.11790.pdf)]
-
-#### Human Value Surveys
-1. **Towards Measuring the Representation of Subjective Global Opinions in Language Models**. *Durmus et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2306.16388.pdf)][[Data](https://huggingface.co/datasets/Anthropic/llm_global_opinions)]
-2. **Culture's consequences: International differences in work-related values**. *Hofstede et al.* 1984. [[Paper](https://books.google.com/books/about/Culture_s_Consequences.html?id=Cayp_Um4O9gC)]
-3. **World Values Survey Wave 7 (2017-2022)**. [[URL](https://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp)]
-4. **European Values Study**. [[URL](https://europeanvaluesstudy.eu/)]
-5. **Pew Researcj Center's Global Attitudes Surveys (GAS)** [[URL](https://www.pewresearch.org/)]
-6. **An overview of the Schwartz theory of basic values**. *Schwartz et al.* Online readings in Psychology and Culture 2012. [[Paper](https://scholarworks.gvsu.edu/cgi/viewcontent.cgi?article=1116&context=orpc)]
-7. **Probing pre-trained language models for cross-cultural differences in values**. *Arora et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2203.13722.pdf)]
