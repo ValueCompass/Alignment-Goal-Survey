@@ -1,7 +1,7 @@
 # A Survey about Alignment Goals
 A collection of papers and resources related to alignment for big models.
 
-The organization of papers refers to our survey "From Instructions to Intrinsic Human Values —— A Survey of Alignment Goals for Big Models".
+The organization of papers refers to our survey "From Instructions to Basic Human Values: A Survey of Alignment Goals for Big Models".
 
 ![](paper_tree.png)
 
@@ -50,8 +50,10 @@ The organization of papers refers to our survey "From Instructions to Intrinsic 
 </details>
 
 
-## Definition of Alignment Goals
-### Human Instructions
+## Human Instructions
+Motivation and Definition
+
+### Alignment Goal Achievement
 1. **Multitask prompted training enables zero-shot task generalizatio**. *Sanh et al.* arXiv 2021. [[Paper](https://arxiv.org/pdf/2110.08207.pdf)][[Checkpoint](https://github.com/bigscience-workshop/t-zero)][[Data](https://github.com/bigscience-workshop/promptsource)]
 2. **Cross-task generalization via natural language crowdsourcing instructions**. *Mishra et al.* arXiv 2021. [[Paper](https://arxiv.org/pdf/2104.08773.pdf)][[Data](https://instructions.apps.allenai.org/)][[Project](https://github.com/allenai/natural-instructions-v1)]
 3. **Super-naturalinstructions: Generalization via declarative instructions on 1600+ nlp tasks**. *Wang et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2204.07705.pdf)][[Data](https://instructions.apps.allenai.org/)][[Project](https://github.com/allenai/natural-instructions)]
@@ -69,6 +71,24 @@ The organization of papers refers to our survey "From Instructions to Intrinsic 
 15. **Aligning text-to-image models using human feedback**. *Lee et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2302.12192.pdf)]
 16. **Visual instruction tuning**. *Liu et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2304.08485.pdf)][[Project](https://llava-vl.github.io/)]
 17. **Llavar: Enhanced visual instruction tuning for text-rich image understanding**. *Zhang et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2306.17107.pdf)][[Project](https://llavar.github.io/)]
+
+### Alignment Goal Evaluation
+#### Benchmarks
+1. **Multitask prompted training enables zero-shot task generalizatio**. *Sanh et al.* arXiv 2021. [[Paper](https://arxiv.org/pdf/2110.08207.pdf)][[Checkpoint](https://github.com/bigscience-workshop/t-zero)][[Data](https://github.com/bigscience-workshop/promptsource)]
+2. **Super-naturalinstructions: Generalization via declarative instructions on 1600+ nlp tasks**. *Wang et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2204.07705.pdf)][[Data](https://instructions.apps.allenai.org/)][[Project](https://github.com/allenai/natural-instructions)]
+3. **The flan collection: Designing data and methods for effective instruction tuning**. *Longpre et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2301.13688.pdf)][[Data](https://github.com/google-research/FLAN/tree/main/flan/v2#download)]
+4. **Opt-IML: Scaling language model instruction meta learning through the lens of generalization**. *Iyer et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2212.12017.pdf)]
+5. **Beyond the imitation game: Quantifying and extrapolating the capabilities of language models**. *Srivastava et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2206.04615.pdf)][[Project](https://github.com/google/BIG-bench)]
+6. **C-eval: A multi-level multi-discipline chinese evaluation suite for foundation models**. *Huang et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2305.08322.pdf)][[Project](https://github.com/SJTU-LIT/ceval)]
+7. **Agieval: A human-centric benchmark for evaluating foundation models**. *Zhong et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2304.06364.pdf)][[Project](https://github.com/microsoft/AGIEval)]
+8. **Discovering language model behaviors with model-written evaluations**. *Perez et al.* arXiv 2022. [[Paper](https://arxiv.org/pdf/2212.09251.pdf?fbclid=IwAR1Rfg18V_AiEk1X5H_7E1i1SXnH9g4FxVDSCvFW41LDBMcKAkUzltP9Jas)][[Project](https://github.com/anthropics/evals)]
+
+#### Automatic Chatbot Arenas
+1. **Alpacaeval: An automatic evaluator of instruction-following models**. *Li et al.* 2023. [[Project](https://github.com/tatsu-lab/alpaca_eval)]
+2. **Alpacafarm: A simulation framework for methods that learn from human feedback**. *Dubois et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2305.14387.pdf)][[Project](https://github.com/tatsu-lab/alpaca_farm/)]
+3. **Vicuna: An open-source chatbot impressing gpt-4 with 90\%* chatgpt quality**. *Chiang et al.* See https://vicuna 2023. [[Paper](https://lmsys.org/blog/2023-03-30-vicuna/)][[Project](https://chat.lmsys.org/?arena)]
+4. **Judging LLM-as-a-judge with MT-Bench and Chatbot Arena**. *Zheng et al.* arXiv 2023. [[Paper](https://arxiv.org/pdf/2306.05685.pdf)][[Project](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge)]
+
 
 ### Human Preferences
 #### Human Demonstrations
